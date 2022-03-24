@@ -18,14 +18,11 @@ body {
   overflow-x: hidden;
 }
 
-.header-logo {
+header {
   padding: 15px;
   border: 2px;
   background-color: #3c3a39;
   width: auto;
-}
-
-.bar-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,7 +48,7 @@ a {
 }
 
 .envelope {
-  padding: 0 55px 0  1px;
+  padding: 0 55px 0  -1px;
 }
 
 .logo {
@@ -70,6 +67,7 @@ h1 {
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
+  margin-top: 120px;
 }
 
 .my-title {
@@ -102,6 +100,7 @@ p {
   justify-content: space-around;
   width: 45%;
   list-style-type: none;
+  padding-left: 30px;
 }
 
 .icon:hover {
@@ -111,12 +110,12 @@ p {
 /* Media query for mobile version */
 
 @media (max-width: 600px) {
-  body {
+  .container {
+    background-color: #1c1a19;
     background-image: url("./images/illustration-header-mobile\ \(1\).png");
-    background-size: 400px;
     background-repeat: no-repeat;
-    background-position: 100% 1%;
-    padding: 0 0 5px 5px;
+    background-position: 100% 130%;
+    padding: 0 1.2rem 6rem 1.2rem;
   }
 
   .title {
