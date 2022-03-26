@@ -1,6 +1,7 @@
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -11,25 +12,31 @@
 }
 
 body {
-  background-color: #1c1a19;
-  line-height: 1.8;
   overflow-x: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+main {
   height: 6968px;
   width: 375px;
   left: 12142px;
   top: -3480px;
-  border-radius: 0;
+  flex: 1 1;
 }
 
 header {
+  width: 375px;
+  height: 99px;
   padding: 15px;
   border: 2px;
   background-color: #3c3a39;
-  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0.1em;
+  margin: 0;
 }
 
 .H-title {
@@ -52,16 +59,34 @@ a {
 }
 
 .envelope {
-  padding: 0 55px 0  -1px;
+  border: 2px #acb7c3;
+  width: 16px;
+  top: 7px;
+  left: 4px;
+  align-items: center;
 }
 
 .logo {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  height: 24px;
   top: 10px;
   left: 12px;
-  padding-left: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  width: 150px;
+  padding-left: 18px;
+}
+
+.container {
+  background-color: #1c1a19;
+  line-height: 1.8;
+  overflow-x: hidden;
+  background-image: url("./images/illustration-header-mobile\ \(1\).png");
+  background-repeat: no-repeat;
+  background-position: 100% 130%;
+  padding: 0 1.2rem 6rem 1.2rem;
 }
 
 h1 {
@@ -72,7 +97,7 @@ h1 {
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .my-title {
@@ -112,28 +137,9 @@ p {
   cursor: pointer;
 }
 
-/* Media query for mobile version */
-
-@media (max-width: 600px) {
-  .container {
-    background-color: #1c1a19;
-    background-image: url("./images/illustration-header-mobile\ \(1\).png");
-    background-repeat: no-repeat;
-    background-position: 100% 130%;
-    padding: 0 1.2rem 6rem 1.2rem;
-  }
-
-  .title {
-    font-size: 56px;
-    padding-top: 40px;
-  }
-
-  p {
-    font-size: 16px;
-    line-height: 24px;
-    font-family: "Poppins", sans-serif;
-    padding-left: 40px;
-  }
+.title {
+  font-size: 56px;
+  padding-top: 40px;
 }
 
 /* My works section */
@@ -142,7 +148,7 @@ p {
   background-color: #e5e5e5;
 }
 
-#h2-projects {
+#h2-project {
   text-align: center;
   font-family: "Crete Round", sans-serif;
   font-size: 40px;
@@ -152,6 +158,8 @@ p {
   padding-top: 130px;
   border-bottom: 1px solid #212121;
   font-weight: 400;
+  font-style: normal;
+  padding-bottom: 48px;
 }
 
 #projects-grid {
@@ -166,7 +174,7 @@ p {
   width: 327px;
   height: 237px;
   left: 24px;
-  padding-left: 40px;
+  padding-left: 45px;
 }
 
 #project-works {
@@ -235,7 +243,7 @@ button,
 }
 
 #main-project-button {
-  margin: 0.7rem 0 0 2rem;
+  margin: 0.7rem 0 0 1.1rem;
 }
 
 #submit {
@@ -279,9 +287,10 @@ button#resume {
   font-weight: 700;
   color: #fff;
   border: none;
-  font-size: 1.1rem;
-  padding: 0.7rem;
+  font-size: 16px;
   width: 100%;
+  height: 48px;
+  flex: 1;
 }
 
 .language-button1 {
@@ -290,12 +299,13 @@ button#resume {
   display: flex;
   font-size: 1rem;
   text-align: center;
+  margin-left: 36px;
 }
 
 .language-button1 li {
   list-style-type: none;
   border: 1px #8993a4 solid;
-  margin: 0 2px 5px 35px;
+  margin: 0 19px 5px 2px;
   color: #fff;
   padding: 3px 7px;
 }
@@ -308,12 +318,13 @@ button#resume {
   text-align: center;
   width: 56px;
   height: 40px;
+  margin: 0 22px;
 }
 
 .language-button12 li {
   list-style-type: none;
   border: 1px #8993a4 solid;
-  margin: 1px 10px;
+  margin: 2px 5px 0 0;
   padding: 10px 12px 10px 12px;
   display: flex;
   text-align: center;
@@ -325,7 +336,7 @@ button#resume {
   max-width: 750px;
   margin: 0 auto;
   width: 327px;
-  height: 450px;
+  height: 470px;
 }
 
 .papd {
@@ -404,18 +415,59 @@ div.skills-title {
   line-height: 24px;
   color: #f2f5f7;
   width: 327px;
-  padding-left: 20px;
+  padding-left: 24px;
+  font-weight: 400;
 }
 
 .title2 {
   text-align: left;
-  font-size: 72px;
+  font-size: 70px;
   font-family: "Crete Round", sans-serif;
   color: #ff6b00;
   line-height: 96%;
   letter-spacing: 0.37px;
   vertical-align: top;
-  width: 387px;
+  width: 335px;
   padding-bottom: 50px;
   padding-left: 15px;
+}
+
+.popup-mobile-img {
+  width: 100%;
+  height: 28%;
+  object-fit: cover;
+  object-position: unset;
+}
+
+.popup-mobile-p {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.mobile-btn {
+  top: 92%;
+  left: 5%;
+}
+
+.mobile-title {
+  font-size: 1.8rem;
+  text-align: left;
+  display: block;
+  padding: 0;
+}
+
+.mobile-languages {
+  margin: 1rem 0;
+}
+
+.mobile-languages > div {
+  font-size: 0.8rem;
+}
+
+.mobile-width {
+  width: 90vw;
+  height: 95vh;
+  padding: 1rem;
 }
