@@ -12,9 +12,13 @@
 
 body {
   background-color: #1c1a19;
-  height: 100%;
   line-height: 1.8;
   overflow-x: hidden;
+  height: 6968px;
+  width: 375px;
+  left: 12142px;
+  top: -3480px;
+  border-radius: 0;
 }
 
 header {
@@ -30,11 +34,12 @@ header {
 
 .H-title {
   color: #fff5e1;
-  padding: 40px;
+  padding: 24px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
+  width: 357px;
 }
 
 .items {
@@ -56,12 +61,12 @@ a {
   font-weight: 700;
   top: 10px;
   left: 12px;
-  padding-left: 40px;
+  padding-left: 12px;
 }
 
 h1 {
   font-family: "Crete Round", sans-serif;
-  padding-left: 40px;
+  padding-left: 24px;
   color: #ff6b00;
   font-weight: 400;
   font-size: 56px;
@@ -74,7 +79,7 @@ h1 {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  padding-left: 40px;
+  padding-left: 24px;
   font-size: 24px;
   line-height: 32px;
 }
@@ -84,7 +89,7 @@ p {
   gap: 35px;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  padding-left: 40px;
+  padding-left: 24px;
   font-size: 16px;
   line-height: 100%;
   width: 327px;
@@ -100,7 +105,7 @@ p {
   justify-content: space-around;
   width: 45%;
   list-style-type: none;
-  padding-left: 30px;
+  padding-left: 24px;
 }
 
 .icon:hover {
@@ -132,6 +137,7 @@ p {
 }
 
 /* My works section */
+
 #projects {
   background-color: #e5e5e5;
 }
@@ -145,6 +151,7 @@ p {
   color: #1c1a19;
   padding-top: 130px;
   border-bottom: 1px solid #212121;
+  font-weight: 400;
 }
 
 #projects-grid {
@@ -156,6 +163,10 @@ p {
 #main-image-div {
   display: flex;
   justify-content: center;
+  width: 327px;
+  height: 237px;
+  left: 24px;
+  padding-left: 40px;
 }
 
 #project-works {
@@ -184,7 +195,7 @@ p {
   font-size: 1rem;
   line-height: 1.5rem;
   padding-right: 20px;
-  width: 430px;
+  width: 327px;
 }
 
 .box {
@@ -245,7 +256,7 @@ button:focus,
 }
 
 button#resume {
-  margin: 1rem 0 15rem 2rem;
+  margin: 1rem 0 15rem 1.6rem;
   border: none;
   font-family: "inter", sans-serif;
   text-align: center;
@@ -260,11 +271,6 @@ button#resume {
   display: flex;
   flex-direction: column;
   background-color: #e5e5e5;
-}
-
-.card-work {
-  border: 5px;
-  text-align: center;
 }
 
 .button2 {
@@ -294,35 +300,52 @@ button#resume {
   padding: 3px 7px;
 }
 
-@media (max-width: 600px) {
-  .card-work {
-    background: url("./images/Img\ Placeholder.png");
-    background-repeat: no-repeat;
-    max-width: 750px;
-    margin: 0 auto;
-    width: 327px;
-    height: 450px;
-  }
+.language-button12 {
+  font-family: "Inter", sans-serif;
+  color: #091e42;
+  display: flex;
+  font-size: 1rem;
+  text-align: center;
+  width: 56px;
+  height: 40px;
+}
 
-  .papd {
-    color: #fff;
-    font-family: "Crete Round", sans-serif;
-    font-size: 32px;
-    line-height: 44px;
-    padding: 0 3px 2px 40px;
-    width: 295px;
-    text-align: left;
-  }
+.language-button12 li {
+  list-style-type: none;
+  border: 1px #8993a4 solid;
+  margin: 1px 10px;
+  padding: 10px 12px 10px 12px;
+  display: flex;
+  text-align: center;
+}
 
-  .papd-p {
-    font-family: "inter", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    color: #fff;
-    padding: 0 3px 0 40px;
-    width: 295px;
-    text-align: left;
-  }
+.card-work {
+  background: url("./images/Img\ Placeholder.png");
+  background-repeat: no-repeat;
+  max-width: 750px;
+  margin: 0 auto;
+  width: 327px;
+  height: 450px;
+}
+
+.papd {
+  color: #fff;
+  font-family: "Crete Round", sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 0 3px 2px 40px;
+  width: 295px;
+  text-align: left;
+}
+
+.papd-p {
+  font-family: "inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding: 0 3px 0 40px;
+  width: 295px;
+  text-align: left;
 }
 
 /* About-me section */
@@ -380,11 +403,12 @@ div.skills-title {
   font-family: "inter", sans-serif;
   line-height: 24px;
   color: #f2f5f7;
-  width: 390px;
+  width: 327px;
+  padding-left: 20px;
 }
 
 .title2 {
-  text-align: center;
+  text-align: left;
   font-size: 72px;
   font-family: "Crete Round", sans-serif;
   color: #ff6b00;
@@ -393,4 +417,5 @@ div.skills-title {
   vertical-align: top;
   width: 387px;
   padding-bottom: 50px;
+  padding-left: 15px;
 }
