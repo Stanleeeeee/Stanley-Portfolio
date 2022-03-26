@@ -1,7 +1,7 @@
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -12,30 +12,41 @@
 }
 
 body {
-  background-color: #1c1a19;
-  height: 100%;
-  line-height: 1.8;
   overflow-x: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
+main {
+  height: 6968px;
+  width: 375px;
+  left: 12142px;
+  top: -3480px;
+  flex: 1 1;
+}
+
 header {
+  width: 375px;
+  height: 99px;
   padding: 15px;
   border: 2px;
   background-color: #3c3a39;
-  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0.1em;
+  margin: 0;
 }
 
 .H-title {
   color: #fff5e1;
-  padding: 40px;
+  padding: 24px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
+  width: 357px;
 }
 
 .items {
@@ -48,33 +59,52 @@ a {
 }
 
 .envelope {
-  padding: 0 55px 0  -1px;
+  border: 2px #acb7c3;
+  width: 16px;
+  top: 7px;
+  left: 4px;
+  align-items: center;
 }
 
 .logo {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  height: 24px;
   top: 10px;
   left: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  width: 150px;
+  padding-left: 18px;
+}
+
+.container {
+  background-color: #1c1a19;
+  line-height: 1.8;
+  overflow-x: hidden;
+  background-image: url("./images/illustration-header-mobile\ \(1\).png");
+  background-repeat: no-repeat;
+  background-position: 100% 130%;
+  padding: 0 1.2rem 6rem 1.2rem;
 }
 
 h1 {
   font-family: "Crete Round", sans-serif;
-  padding-left: 40px;
+  padding-left: 24px;
   color: #ff6b00;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .my-title {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  padding-left: 40px;
+  padding-left: 24px;
   font-size: 24px;
   line-height: 32px;
 }
@@ -84,7 +114,7 @@ p {
   gap: 35px;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  padding-left: 40px;
+  padding-left: 24px;
   font-size: 16px;
   line-height: 100%;
   width: 327px;
@@ -100,33 +130,344 @@ p {
   justify-content: space-around;
   width: 45%;
   list-style-type: none;
-  padding-left: 30px;
+  padding-left: 24px;
 }
 
 .icon:hover {
   cursor: pointer;
 }
 
-/* Media query for mobile version */
+.title {
+  font-size: 56px;
+  padding-top: 40px;
+}
 
-@media (max-width: 600px) {
-  .container {
-    background-color: #1c1a19;
-    background-image: url("./images/illustration-header-mobile\ \(1\).png");
-    background-repeat: no-repeat;
-    background-position: 100% 130%;
-    padding: 0 1.2rem 6rem 1.2rem;
-  }
+/* My works section */
 
-  .title {
-    font-size: 56px;
-    padding-top: 40px;
-  }
+#projects {
+  background-color: #e5e5e5;
+}
 
-  p {
-    font-size: 16px;
-    line-height: 24px;
-    font-family: "Poppins", sans-serif;
-    padding-left: 40px;
-  }
+#h2-project {
+  text-align: center;
+  font-family: "Crete Round", sans-serif;
+  font-size: 40px;
+  line-height: 52px;
+  line-height: 102%;
+  color: #1c1a19;
+  padding-top: 130px;
+  border-bottom: 1px solid #212121;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 48px;
+}
+
+#projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#main-image-div {
+  display: flex;
+  justify-content: center;
+  width: 327px;
+  height: 237px;
+  left: 24px;
+  padding-left: 45px;
+}
+
+#project-works {
+  display: block;
+  width: 80vw;
+  padding-top: 70px;
+}
+
+#project-content {
+  padding: 0 1rem 0 0.5rem;
+}
+
+#project-h3 {
+  font-family: "Crete Round", sans-serif;
+  color: #091e42;
+  font-weight: normal;
+  font-size: 32px;
+  padding: 40px;
+  line-height: 44px;
+  width: 350px;
+}
+
+#content-p {
+  font-family: "Inter", sans-serif;
+  color: #091e42;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-right: 20px;
+  width: 327px;
+}
+
+.box {
+  border: 1px solid #8993a4;
+  font-family: "Inter", sans-serif;
+  color: #091e42;
+  display: flex;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.9rem 0 0.2rem 2rem;
+  padding: 2px 12px;
+}
+
+.language-container {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.mini-languages-container {
+  display: flex;
+  gap: 1rem;
+  padding: 0 0 1.5rem 0.6rem;
+}
+
+/* Buttons */
+
+button,
+#submit {
+  background-color: #fc6703;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.7rem;
+}
+
+#main-project-button {
+  margin: 0.7rem 0 0 1.1rem;
+}
+
+#submit {
+  margin-bottom: 2rem;
+}
+
+button:hover,
+#submit:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+  cursor: pointer;
+}
+
+button:focus,
+#submit:focus {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+button#resume {
+  margin: 1rem 0 15rem 1.6rem;
+  border: none;
+  font-family: "inter", sans-serif;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: inline-block;
+}
+
+#container-grid {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e5e5;
+}
+
+.button2 {
+  background-color: #fc6703;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  height: 48px;
+  flex: 1;
+}
+
+.language-button1 {
+  font-family: "Inter", sans-serif;
+  color: #091e42;
+  display: flex;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: 36px;
+}
+
+.language-button1 li {
+  list-style-type: none;
+  border: 1px #8993a4 solid;
+  margin: 0 19px 5px 2px;
+  color: #fff;
+  padding: 3px 7px;
+}
+
+.language-button12 {
+  font-family: "Inter", sans-serif;
+  color: #091e42;
+  display: flex;
+  font-size: 1rem;
+  text-align: center;
+  width: 56px;
+  height: 40px;
+  margin: 0 22px;
+}
+
+.language-button12 li {
+  list-style-type: none;
+  border: 1px #8993a4 solid;
+  margin: 2px 5px 0 0;
+  padding: 10px 12px 10px 12px;
+  display: flex;
+  text-align: center;
+}
+
+.card-work {
+  background: url("./images/Img\ Placeholder.png");
+  background-repeat: no-repeat;
+  max-width: 750px;
+  margin: 0 auto;
+  width: 327px;
+  height: 470px;
+}
+
+.papd {
+  color: #fff;
+  font-family: "Crete Round", sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 0 3px 2px 40px;
+  width: 295px;
+  text-align: left;
+}
+
+.papd-p {
+  font-family: "inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding: 0 3px 0 40px;
+  width: 295px;
+  text-align: left;
+}
+
+/* About-me section */
+
+#about-me {
+  background-color: #1c1a19;
+  padding: 150px 2px 0 15px;
+}
+
+div#about-me-description {
+  background-image: url("images/illustration-about-me-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  border-bottom: 1px solid #fff;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#languages-list,
+#skills-list,
+#frameworks-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+}
+
+#skills h3 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin: 3rem 0;
+}
+
+div.skills-title {
+  display: flex;
+  align-items: baseline;
+}
+
+.orange-icon {
+  width: 1.3rem;
+  height: 1.2rem;
+}
+
+#about-me-p {
+  font-size: 16px;
+  font-family: "inter", sans-serif;
+  line-height: 24px;
+  color: #f2f5f7;
+  width: 327px;
+  padding-left: 24px;
+  font-weight: 400;
+}
+
+.title2 {
+  text-align: left;
+  font-size: 70px;
+  font-family: "Crete Round", sans-serif;
+  color: #ff6b00;
+  line-height: 96%;
+  letter-spacing: 0.37px;
+  vertical-align: top;
+  width: 335px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+}
+
+.popup-mobile-img {
+  width: 100%;
+  height: 28%;
+  object-fit: cover;
+  object-position: unset;
+}
+
+.popup-mobile-p {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.mobile-btn {
+  top: 92%;
+  left: 5%;
+}
+
+.mobile-title {
+  font-size: 1.8rem;
+  text-align: left;
+  display: block;
+  padding: 0;
+}
+
+.mobile-languages {
+  margin: 1rem 0;
+}
+
+.mobile-languages > div {
+  font-size: 0.8rem;
+}
+
+.mobile-width {
+  width: 90vw;
+  height: 95vh;
+  padding: 1rem;
 }
