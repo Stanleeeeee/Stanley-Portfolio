@@ -1,7 +1,6 @@
-
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -11,32 +10,32 @@
   }
 }
 
-body {
-  overflow-x: hidden;
-}
-
-.no-scroll {
-  overflow: hidden;
+.column {
+  width: 100%;
 }
 
 main {
-  height: 6968px;
-  width: 375px;
-  left: 12142px;
-  top: -3480px;
-  flex: 1 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  flex-direction: column;
+}
+
+body {
+  background-color: #1c1a19;
+  line-height: 1.8;
+  overflow-x: hidden;
 }
 
 header {
-  width: 375px;
-  height: 99px;
   padding: 15px;
   border: 2px;
   background-color: #3c3a39;
+  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
+  margin: 0.1em;
 }
 
 .H-title {
@@ -59,34 +58,20 @@ a {
 }
 
 .envelope {
-  border: 2px #acb7c3;
   width: 16px;
   top: 7px;
   left: 4px;
   align-items: center;
+  margin-right: 30px;
 }
 
 .logo {
-  height: 24px;
-  top: 10px;
-  left: 12px;
+  color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 18px;
-  text-align: center;
-  color: #fff;
-  width: 150px;
-  padding-left: 18px;
-}
-
-.container {
-  background-color: #1c1a19;
-  line-height: 1.8;
-  overflow-x: hidden;
-  background-image: url("./images/illustration-header-mobile\ \(1\).png");
-  background-repeat: no-repeat;
-  background-position: 100% 130%;
-  padding: 0 1.2rem 6rem 1.2rem;
+  top: 10px;
+  left: 12px;
+  padding-left: 12px;
 }
 
 h1 {
@@ -97,20 +82,20 @@ h1 {
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 .my-title {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  padding-left: 24px;
   font-size: 24px;
   line-height: 32px;
+  width: 327px;
+  left: 24px;
 }
 
 p {
-  align-items: center;
   gap: 35px;
   color: #fff;
   font-family: "Poppins", sans-serif;
@@ -118,6 +103,10 @@ p {
   font-size: 16px;
   line-height: 100%;
   width: 327px;
+  text-align: left;
+  left: 24px;
+  height: 123px;
+  top: 295px;
 }
 
 /* Headline icons */
@@ -137,12 +126,26 @@ p {
   cursor: pointer;
 }
 
-.title {
-  font-size: 56px;
-  padding-top: 40px;
+/* Media query for mobile version */
+
+@media (max-width: 600px) {
+  .container {
+    background-color: #1c1a19;
+    background-image: url("./images/illustration-header-mobile\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: 100% 130%;
+    padding: 0 1.2rem 6rem 1.2rem;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    padding-left: 40px;
+  }
 }
 
-/* My works section */
+/* Projects section */
 
 #projects {
   background-color: #e5e5e5;
@@ -153,12 +156,11 @@ p {
   font-family: "Crete Round", sans-serif;
   font-size: 40px;
   line-height: 52px;
-  line-height: 102%;
   color: #1c1a19;
   padding-top: 130px;
-  border-bottom: 1px solid #212121;
   font-weight: 400;
-  font-style: normal;
+  width: 327px;
+  border-bottom: 1px solid #212121;
   padding-bottom: 48px;
 }
 
@@ -174,7 +176,7 @@ p {
   width: 327px;
   height: 237px;
   left: 24px;
-  padding-left: 45px;
+  padding-left: 40px;
 }
 
 #project-works {
@@ -206,17 +208,6 @@ p {
   width: 327px;
 }
 
-.box {
-  border: 1px solid #8993a4;
-  font-family: "Inter", sans-serif;
-  color: #091e42;
-  display: flex;
-  font-size: 1rem;
-  text-align: center;
-  margin: 0.9rem 0 0.2rem 2rem;
-  padding: 2px 12px;
-}
-
 .language-container {
   display: flex;
   gap: 0.6rem;
@@ -243,7 +234,7 @@ button,
 }
 
 #main-project-button {
-  margin: 0.7rem 0 0 1.1rem;
+  margin: 0.8rem 0 0 2rem;
 }
 
 #submit {
@@ -287,10 +278,9 @@ button#resume {
   font-weight: 700;
   color: #fff;
   border: none;
-  font-size: 16px;
+  font-size: 1.1rem;
+  padding: 0.7rem;
   width: 100%;
-  height: 48px;
-  flex: 1;
 }
 
 .language-button1 {
@@ -299,13 +289,12 @@ button#resume {
   display: flex;
   font-size: 1rem;
   text-align: center;
-  margin-left: 36px;
 }
 
 .language-button1 li {
   list-style-type: none;
   border: 1px #8993a4 solid;
-  margin: 0 19px 5px 2px;
+  margin: 0 2px 5px 35px;
   color: #fff;
   padding: 3px 7px;
 }
@@ -318,14 +307,14 @@ button#resume {
   text-align: center;
   width: 56px;
   height: 40px;
-  margin: 0 22px;
+  margin-top: 95px;
 }
 
 .language-button12 li {
   list-style-type: none;
   border: 1px #8993a4 solid;
-  margin: 2px 5px 0 0;
-  padding: 10px 12px 10px 12px;
+  margin: 0 0 0 28px;
+  padding: 0 4px;
   display: flex;
   text-align: center;
 }
@@ -336,7 +325,7 @@ button#resume {
   max-width: 750px;
   margin: 0 auto;
   width: 327px;
-  height: 470px;
+  height: 450px;
 }
 
 .papd {
@@ -415,59 +404,33 @@ div.skills-title {
   line-height: 24px;
   color: #f2f5f7;
   width: 327px;
-  padding-left: 24px;
-  font-weight: 400;
+  padding-left: 20px;
 }
 
 .title2 {
   text-align: left;
-  font-size: 70px;
+  font-size: 72px;
   font-family: "Crete Round", sans-serif;
   color: #ff6b00;
   line-height: 96%;
   letter-spacing: 0.37px;
   vertical-align: top;
-  width: 335px;
+  width: 387px;
   padding-bottom: 50px;
   padding-left: 15px;
 }
 
-.popup-mobile-img {
-  width: 100%;
-  height: 28%;
-  object-fit: cover;
-  object-position: unset;
-}
+/* desktop version */
+@media (min-width: 600px) {
+  .column {
+    width: 50%;
+  }
 
-.popup-mobile-p {
-  width: 100%;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-top: 1rem;
-}
+  main {
+    flex-wrap: nowrap;
+  }
 
-.mobile-btn {
-  top: 92%;
-  left: 5%;
-}
-
-.mobile-title {
-  font-size: 1.8rem;
-  text-align: left;
-  display: block;
-  padding: 0;
-}
-
-.mobile-languages {
-  margin: 1rem 0;
-}
-
-.mobile-languages > div {
-  font-size: 0.8rem;
-}
-
-.mobile-width {
-  width: 90vw;
-  height: 95vh;
-  padding: 1rem;
+  div {
+    flex-basis: 33%;
+  }
 }
