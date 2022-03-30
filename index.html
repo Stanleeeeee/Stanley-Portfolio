@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portifolio | Stanley</title>
-  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" max-width type="text/css" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
@@ -29,10 +29,6 @@
     <a href="#home" class="logo">Ezeoke Stanley</a>
     <nav>
          <img src="./icons/menu.png" alt="menu" class="envelope">
-        <!-- <a href="#portfolio" class="desktop-icon">Portfolio</a>
-         <a href="#about" class="desktop-icon">About</a>
-         <a href="#contact" class="desktop-icon">Contact</a>
-         <img src="./images/envlope-desktop.png" alt="envelope icon" class="desktop-icon">-->
      </nav>
 </header>
          <!--Header-->
@@ -83,7 +79,7 @@
               <!--Projects section-->
               <section id="projects">
                 <div id="h2-container">
-                  <h2 id="h2-project">My Recent Works</h2>
+                  <h2 class="h2-project">My Recent Works</h2>
                   <div id="h2-div"></div>
                 </div>
                 <div id="portfolio-grid">
@@ -261,6 +257,58 @@
                   </div>
                 </div>
               </section>
-             </main>
-            </body>
-          </html>
+
+              <!--Form section-->
+    <section id="form-section">
+      <h2>
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </h2>
+      <form
+        action="#"
+        method="POST"
+        id="contact-form"
+      >
+        <fieldset>
+          <input
+            class="inputs"
+            type="text"
+            name="full-name"
+            id="fullname"
+            maxlength="30"
+            placeholder="Full name"
+            required
+          />
+          <input
+            class="inputs"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address"
+            required
+          />
+
+          <textarea
+            name="comments"
+            id="comments"
+            maxlength="500"
+            placeholder="Enter text here"
+          ></textarea>
+        </fieldset>
+        <input type="submit" id="submit" name="submit" value="Get in touch" />
+        <small class="small hidden show"
+          >Please, enter valid Email: lower case only.</small
+        >
+      </form>
+    </section>
+    <!--Footer-->
+    <footer id="form-icons">
+      <img src="icons/vector4.png" alt="github icon" />
+      <img src="icons/Disabled.png" alt="linkedin icon" />
+      <img class="gap" src="icons/vector1.png" alt="twitter" />
+      <img class="gap" src="icons/vector2.png" alt="hand" />
+      <img src="icons/vector3.png" alt="medium" />
+     </footer>
+   </main>
+ </body>
+</html>
