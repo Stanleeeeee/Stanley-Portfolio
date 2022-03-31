@@ -297,11 +297,13 @@ button#resume {
   color: #091e42;
   display: flex;
   font-size: 1rem;
+  float: right;
   text-align: center;
 }
 
 .language-button1 li {
   list-style-type: none;
+  float: none;
   border: 1px #8993a4 solid;
   margin: 0 2px 5px 35px;
   color: #fff;
@@ -314,6 +316,7 @@ button#resume {
   display: flex;
   font-size: 1rem;
   text-align: center;
+  float: left;
   width: 56px;
   height: 40px;
   margin-top: 95px;
