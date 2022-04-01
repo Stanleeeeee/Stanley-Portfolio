@@ -4,12 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
   <title>Portifolio | Stanley</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+ <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto"
+/>
+ <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Poppins"
+/>
+ <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Inter"
+/>
 </head>
 <body>
   <main>
@@ -17,7 +28,7 @@
   <header>
     <a href="#home" class="logo">Ezeoke Stanley</a>
     <nav>
-         <img src="./icons/menu.png" alt="envelope icon" class="envelope">
+         <img src="./icons/menu.png" alt="menu" class="envelope">
      </nav>
 </header>
          <!--Header-->
@@ -68,7 +79,7 @@
               <!--Projects section-->
               <section id="projects">
                 <div id="h2-container">
-                  <h2 id="h2-project">My Recent Works</h2>
+                  <h2 class="h2-project">My Recent Works</h2>
                   <div id="h2-div"></div>
                 </div>
                 <div id="portfolio-grid">
@@ -193,7 +204,6 @@
               </section>
 
               <!--About Me section-->
-
               <section id="about-me">
                 <div id="about-me-description">
                   <h2 class="title2">About me</h2>
@@ -247,6 +257,60 @@
                   </div>
                 </div>
               </section>
-             </main>
-            </body>
-          </html>
+
+              <!--Form section-->
+    <section id="form-section">
+      <h2>
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </h2>
+      <form
+        action="https://formspree.io/f/moqrdeno"
+        method="POST"
+        id="contact-form"
+      >
+        <fieldset>
+          <input
+            class="inputs"
+            type="text"
+            name="full-name"
+            id="fullname"
+            maxlength="30"
+            placeholder="Full name"
+            required
+          />
+          <input
+            class="inputs"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address"
+            required
+          />
+
+          <textarea
+            name="comments"
+            id="comments"
+            maxlength="500"
+            placeholder="Enter text here"
+          ></textarea>
+        </fieldset>
+        <input type="submit" id="submit" name="submit" value="Get in touch" />
+        <small class="small hidden show"
+          >Please, enter valid Email: lower case only.</small
+        >
+      </form>
+    </section>
+    <!--Footer-->
+    <footer id="form-icons">
+   <ul class="media">
+      <li><img src="icons/vector4.png" alt="github icon"/></li>
+      <li><img src="icons/Disabled.png" alt="linkedin icon"/></li>
+      <li><img class="gap" src="icons/vector1.png" alt="twitter"/></li>
+      <li><img class="gap" src="icons/vector2.png" alt="hand"/></li>
+        <li><img src="icons/vector3.png" alt="medium"/></li>
+    </ul>
+     </footer>
+   </main>
+ </body>
+</html>
