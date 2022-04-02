@@ -598,7 +598,7 @@ div.skills-title {
   .proje {
     margin-top: 12rem;
     margin-bottom: 12rem;
-    background: #e5e5e5;
+    background: #fff;
     width: 100%;
     height: auto;
     padding-left: 15.3rem;
@@ -972,7 +972,8 @@ div.skills-title {
   }
 
   #skills h3 {
-    margin-bottom: 2rem;
+    margin-bottom: 2.2rem;
+    padding-top; 0.5rem
   }
 
   #languages-list,
@@ -1074,7 +1075,7 @@ div.skills-title {
 .proje1 {
   margin-top: 12rem;
   margin-bottom: 12rem;
-  background: #e5e5e5;
+  background: #fff;
   width: 100%;
   height: auto;
   padding-left: 15.3rem;
