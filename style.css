@@ -316,7 +316,7 @@ button#resume {
   display: flex;
   font-size: 1rem;
   text-align: center;
-  float: right;
+  float: left;
   width: 56px;
   height: 40px;
   margin: 0 22px;
