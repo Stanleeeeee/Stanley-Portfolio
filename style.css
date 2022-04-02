@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html{
+  font-size: 62.5%;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   * {
@@ -27,7 +30,16 @@ body {
   overflow-x: hidden;
   flex: 1 1 auto;
 }
-
+.proje{
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+  background: #E5E5E5;
+  width: 100%;
+  height: auto;
+  padding-left: 15.3rem;
+  padding-right: 15.3rem;
+  padding-top: 10rem;
+}
 header {
   padding: 15px;
   border: 2px;
@@ -144,6 +156,9 @@ p {
     background-repeat: no-repeat;
     background-position: 100% 130%;
     padding: 0 1.2rem 6rem 1.2rem;
+  }
+  .somework{
+    grid-template-columns: repeat(1,1fr);
   }
 
   body {
@@ -305,7 +320,6 @@ button#resume {
   color: #091e42;
   display: flex;
   font-size: 1rem;
-  float: right;
   text-align: center;
 }
 
@@ -541,9 +555,161 @@ div.skills-title {
     background-color: #e6e6e5;
   }
 }
-
 /* desktop version */
 @media (min-width: 768px) {
+  .somework{
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    grid-gap: 2.4rem;
+    margin-bottom: 13rem;
+  }
+  .somework__card{
+    background-color:silver;
+    position: relative;
+  }
+  .somework__img{
+    width: 100%;
+    margin: 0;
+  }
+  .somework__button{
+    width: 100%;
+    padding:1.7rem;
+    margin: 0;
+  }
+
+ .proje{
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    background: #E5E5E5;
+    width: 100%;
+    height: auto;
+    padding-left: 15.3rem;
+    padding-right: 15.3rem;
+    padding-top: 10rem;
+  }
+  
+  .somework__data{
+    position: absolute;
+    top:20rem;
+  }
+  .somework__title{
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 4.4rem;
+    color: #FFFFFF;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+
+  }
+  .somework__p{
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+.recent__h2{
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091E42;
+  justify-content:space-between;
+  margin-bottom: 11rem;
+}
+  .recent__h2__line{
+border: 1px solid #212121;;
+    color: #212121;
+    width: 70.4rem;
+  }
+
+.work{
+  margin-top: 11.4rem;
+  margin-bottom: 2rem;
+  display: inline;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.work img{
+  height: 44.8rem;
+}
+.work__details{
+  height: 100%;
+  padding-left: 2.4rem;
+
+}
+.work__details__title{
+font-weight: 400;
+font-size: 4rem;
+line-height: 5.2rem;
+align-items: center;
+color: #091E42;
+width: auto;
+}
+
+.work__details__p{
+font-weight: 400;
+font-size: 1.5rem;
+line-height: 2.8rem;
+color: #091E42;
+padding-left: 0;
+margin-top: 2.4rem;
+margin-bottom: 2.4rem;
+}
+
+.single_work_stack {
+  display: flex;
+  column-gap: 0.8rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.03em;
+  margin-top: 9rem;
+}
+
+.single_work_stack li {
+  list-style: none;
+  padding: 0.4rem 1.2rem;
+  background: #ebebff;
+  border-radius: 0.8rem;
+}
+
+.work__details__language{
+display: flex;
+margin-top: 2.4rem;
+flex-direction:row;
+background-color: green;
+margin-top: 10rem;
+}
+.work__details__language li{
+color: #091E42;
+}
+
+
+
+#recent{
+ margin-top: 13rem;
+ margin-left: 15rem;
+ margin-right: 15rem;
+ width: 100vw;
+  }
+
+  .container {
+    background-image: url("./images/Illustration-header-desktop.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-bottom: 3rem;
+    background-size: 35%;
+    background-color: #1c1a19;
+    height: 120vh;
+  }
+
+  header {
+    height: 72px;
+    color: #3e3c3c;
+    display: flex;
+  }
+
+
+
   .container {
     background-image: url("./images/Illustration-header-desktop.png");
     background-repeat: no-repeat;
@@ -891,4 +1057,57 @@ div.skills-title {
     align-items: center;
     gap: 0.5rem;
   }
+}
+
+
+.somework{
+  display: grid;
+  grid-gap: 2.4rem;
+  margin-bottom: 13rem;
+}
+.somework__card{
+  background-color:silver;
+  position: relative;
+}
+.somework__img{
+  width: 100%;
+  margin: 0;
+}
+.somework__button{
+  width: 100%;
+  padding:1.7rem;
+  margin: 0;
+}
+
+.proje{
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+  background: #E5E5E5;
+  width: 100%;
+  height: auto;
+  padding-left: 15.3rem;
+  padding-right: 15.3rem;
+  padding-top: 10rem;
+}
+
+.somework__data{
+  position: absolute;
+  top:20rem;
+}
+.somework__title{
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 4.4rem;
+  color: #FFFFFF;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+
+}
+.somework__p{
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+.work{
+
+  grid-template-columns: repeat(2,1fr);
 }
