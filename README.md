@@ -1,13 +1,18 @@
 
-# Project Name
+# Project Name and Description
 
-> This is a mobile version of Portfolio clone project by Microverse.
+> This is a Mobile and Desktop version of the Figma Portfolio project by Microverse. I was able to design thos project using html, css and added transition and animation too.
 
 
 ## Built With
 
 - HTML
 - CSS
+
+## Link to online version
+You can check out the project using the below link
+
+https://stanleeeeee.github.io/Stanley-Portfolio/
 
 
 ## Authors
