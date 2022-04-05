@@ -526,10 +526,6 @@ textarea {
     margin-right: 130px;
   }
 
-  .card1 a {
-    display: inline-block;
-  }
-
   .navbar ul a {
     color: #fff;
     text-decoration: none;
@@ -767,12 +763,6 @@ textarea {
   }
 
   .language-bullet {
-    position: relative;
-    top: 40px;
-    left: 36.46px;
-  }
-
-  .frameworks-bullet {
     position: relative;
     top: 40px;
     left: 36.46px;
