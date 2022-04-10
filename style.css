@@ -13,14 +13,27 @@ body {
   color: #fff;
 }
 
-.navbar {
+/*.navbar {
   display: flex;
   justify-content: space-between;
   padding-top: 2.25rem;
 }
 
 .navbar ul {
-  display: none;
+  list-style-type: none;
+}
+
+.nodisplay-mobile {
+  display: none ;
+}
+
+.menu-icon {
+  width: 16px;
+  top: 2px;
+  left: 4px;
+  align-items: center;
+  margin-right: 30px;
+  margin-bottom: 5px;
 }
 
 .container {
@@ -35,6 +48,110 @@ body {
   position: fixed;
   top: 0;
   z-index: 1;
+}*/
+
+header {
+  background-color: #3c3a39;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  height: 4.5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+/* Navbar */
+
+nav {
+  margin: 0 1.5rem;
+  padding: 1.0rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expand {
+  height: 100vh;
+  margin: 0;
+  padding: 1.5rem 0.8rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.ul-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+.ul-list li:nth-child(3),
+.ul-list li:nth-child(4),
+.ul-list li:nth-child(5) {
+  border-bottom: thin solid gainsboro;
+  padding: 0 0 0.5rem 1rem;
+  margin-bottom: 0.8rem;
+  color: #fff5e1;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+nav > span {
+  font-size: 1rem;
+  font-weight: bold;
+  animation: name-effect 3s;
+}
+
+@keyframes name-effect {
+  from {
+    color: #fff;
+  }
+
+  50% {
+    color: #fc6703;
+    text-shadow: 0 0 20px #fc6703;
+  }
+
+  to {
+    color: #fff;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.hidden-items,
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+  width: 100%;
+}
+
+#menu {
+  width: 18px;
+  height: 18px;
+}
+
+.X {
+  display: block;
+  position: relative;
+  left: 90%;
+}
+
+.container {
+  margin: 0 24px;
+  overflow: hidden;
 }
 
 .main h2 {
@@ -394,18 +511,21 @@ body {
   position: relative;
   top: 70px;
   left: 80px;
+  margin-left: 50px;
 }
 
 .frameworks-bullet {
   position: relative;
   top: 60px;
   left: 80px;
+  margin-left: 50px;
 }
 
 .skills-bullet {
   position: relative;
   top: 65px;
   left: 130px;
+  margin-left: 50px;
 }
 
 #footer {
@@ -524,6 +644,14 @@ textarea {
     visibility: hidden;
   }
 
+  /*#menu {
+    display: none;
+  }
+
+  .nonvisible {
+    visibility: hidden;
+  }
+
   .navbar ul {
     display: inline;
     display: flex;
@@ -539,7 +667,7 @@ textarea {
     display: inline-block;
   }
 
-  .navbar ul a {
+  .nodisplay-mobile {
     color: #fff;
     text-decoration: none;
     font-family: 'Inter', sans-serif;
@@ -570,7 +698,61 @@ textarea {
   .navbar {
     padding-left: 130px;
     padding-top: 24px;
+  } */
+
+
+  header {
+    height: 4.5rem;
   }
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    margin: 0 10rem;
+  }
+
+  nav > ul {
+    display: flex;
+    gap: 4.5rem;
+  }
+
+  nav > ul > li {
+    font-size: 1rem;
+    font-weight: 600; 
+  }
+
+  .socials li {
+    margin-bottom: 19px;
+  }
+
+  nav > span {
+    font-size: 1.2rem;
+  }
+
+  .card1 a {
+    display: inline-block;
+  }
+
+  nav ul a:hover {
+    color: #ff6800;
+    margin-right: 20px;
+    width: 20px;
+    margin-left: 20px;
+    transition-property: margin-right, margin-left;
+    transition-duration: 2s;
+  }
+
+  .hidden-items {
+    display: inline;
+    font-size: 1rem;
+  }
+
+  #X {
+    display: none;
+  }
+
 
   .main {
     padding-top: 336px;
@@ -779,18 +961,21 @@ textarea {
     position: relative;
     top: 40px;
     left: 36.46px;
+    margin-left: 0;
   }
 
   .frameworks-bullet {
     position: relative;
     top: 40px;
     left: 36.46px;
+    margin-left: 0;
   }
 
   .skills-bullet {
     position: relative;
     top: 40px;
     left: 36.46px;
+    margin-left: 0;
   }
 
   .contact-me {

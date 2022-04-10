@@ -25,29 +25,30 @@
 <body>
   <div id="first-page">
 
-    <header class="header">
-        <nav class="navbar container">
-            <a class="logo" href="#">Ezeoke Stanley</a>
-            <div class="nodisplay-desktop">
-                <div class="hamburger">
-
-                </div>
-                <div class="hamburger">
-
-                </div>
-
-                <div class="hamburger">
-
-                </div>
-
-            </div>
-            <ul>
-                <li> <a href="#portfolio">Portoflio</a></li>
-                <li> <a href="#about-me">About</a></li>
-                <li> <a href="#footer">Contact</a></li>
-                <li> <a href=""><img src="./images/envlope-desktop.png" alt="envelop Icon"></a></li>
-            </ul>
-        </nav>
+    <header>
+      <nav>
+        <span id="name">Ezeoke Stanley</span>
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="icons/menu.png" alt="hamburger menu" id="menu"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="exit hidden"
+              ><img src="icons/Icon.png" alt="x-icon"
+            /></a>
+          </li>
+          <li class="hidden-items"><a href="#projects">Portfolio</a></li>
+          <li class="hidden-items"><a href="#about-me">About</a></li>
+          <li class="hidden-items"><a href="#form-section">Contact</a></li>
+          <li class="hidden-items">
+            <a href="#"
+              ><img src="./images/envlope-desktop.png" alt="envelope icon" id="envelope"
+            /></a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
       <!--Headline Section-->
@@ -95,7 +96,7 @@
         <div class="flex-port">
             <div class="portfolio-img">
                 <img class="portfolio-image nodisplay-desktop" src="./images/Img.png" alt="">
-                <img class="hidden-mobile" src="images/Img-placeholder-desktop.png" alt="works Project">
+                <img class="hidden-mobile" src="images/Img-placeholder-desktop.png" alt="">
             </div>
             <div class="flex-port-text">
                 <h2>
@@ -238,7 +239,7 @@
     <div id="about-category">
 
         <div class="language">
-            <img class="language-bullet" src="./icons/Rectangle55.png" alt="">
+            <img class="language-bullet" src="./icons/Rectangle55.png" alt="Star shape">
             <h2>Languages</h2>
             <ul>
                 <li>Javascript</li>
@@ -249,7 +250,7 @@
         </div>
 
         <div class="frameworks">
-            <img class="frameworks-bullet" src="./icons/Rectangle56.png" alt="">
+            <img class="frameworks-bullet" src="./icons/Rectangle56.png" alt="Rectangle shape">
             <h2>Frameworks</h2>
             <ul>
                 <li>Bootstrap</li>
@@ -261,7 +262,7 @@
         </div>
 
         <div class="skills">
-            <img class="skills-bullet" src="./icons/Rectangle57.png" alt="">
+            <img class="skills-bullet" src="./icons/Rectangle57.png" alt="circle shape">
             <h2>Skills</h2>
             <ul>
                 <li>Codekit</li>
