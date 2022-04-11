@@ -13,28 +13,98 @@ body {
   color: #fff;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 2.25rem;
-}
-
-.navbar ul {
-  display: none;
-}
-
-.container {
-  margin: 0 24px;
-  overflow: hidden;
-}
-
-.header {
-  background-color: #3e3c3c;
+header {
+  background-color: #3c3a39;
+  color: white;
+  font-family: "Roboto", sans-serif;
   height: 4.5rem;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 1;
+}
+
+/* Navbar */
+
+nav {
+  margin: 0 1.5rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expand {
+  height: 100vh;
+  margin: 0;
+  padding: 1.5rem 0.8rem;
+  display: flex;
+  align-items: flex-start;
+  background: #3c3a39;
+}
+
+.ul-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+nav > span {
+  font-size: 1rem;
+  font-weight: bold;
+  animation: name-effect 3s;
+}
+
+@keyframes name-effect {
+  from {
+    color: #fff;
+  }
+
+  50% {
+    color: #fc6703;
+    text-shadow: 0 0 20px #fc6703;
+  }
+
+  to {
+    color: #fff;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.hidden-items,
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+  width: 100%;
+}
+
+#menu {
+  width: 18px;
+  height: 18px;
+}
+
+.X {
+  display: block;
+  position: relative;
+  left: 90%;
+}
+
+.container {
+  margin: 0 24px;
+  overflow: hidden;
 }
 
 .main h2 {
@@ -45,6 +115,21 @@ body {
   line-height: 4rem;
   letter-spacing: 0.37px;
   margin: 12px 0;
+  animation: typing 8s steps(18, end) forwards;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  33% {
+    width: 100%;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
 
 .text-subheading h3 {
@@ -178,6 +263,17 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
+}
+
+.ul-list li:nth-child(3),
+.ul-list li:nth-child(4),
+.ul-list li:nth-child(5) {
+  border-bottom: thin solid gainsboro;
+  padding: 0 0 0.5rem 1rem;
+  margin-bottom: 0.8rem;
+  color: #fff5e1;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .grid-container a button {
@@ -394,18 +490,21 @@ body {
   position: relative;
   top: 70px;
   left: 80px;
+  margin-left: 50px;
 }
 
 .frameworks-bullet {
   position: relative;
   top: 60px;
   left: 80px;
+  margin-left: 50px;
 }
 
 .skills-bullet {
   position: relative;
   top: 65px;
   left: 130px;
+  margin-left: 50px;
 }
 
 #footer {
@@ -524,48 +623,57 @@ textarea {
     visibility: hidden;
   }
 
-  .navbar ul {
-    display: inline;
+  header {
+    height: 4.5rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    margin: 0 10rem;
+  }
+
+  nav > ul {
     display: flex;
-    width: 295px;
-    align-content: center;
-    justify-content: space-between;
-    position: relative;
-    bottom: 12px;
-    margin-right: 130px;
+    gap: 4.5rem;
   }
 
-  .navbar ul a {
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
+  nav > ul > li {
+    font-size: 1rem;
     font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
-    width: 15px;
-    transition-property: margin-right, margin-left;
-    transition-duration: 2s;
   }
 
-  .navbar ul a:hover {
+  .socials li {
+    margin-bottom: 19px;
+  }
+
+  nav > span {
+    font-size: 1.2rem;
+  }
+
+  .card1 a {
+    display: inline-block;
+  }
+
+  nav ul a:hover {
+    background-color: rgb(38, 219, 14);
     color: #ff6800;
     margin-right: 20px;
     width: 20px;
     margin-left: 20px;
+    transition-property: margin-right, margin-left;
+    transition-duration: 2s;
   }
 
-  .socials li {
-    margin-bottom: 18px;
+  .hidden-items {
+    display: inline;
+    font-size: 1rem;
   }
 
-  .navbar ul li {
-    list-style: none;
-  }
-
-  .navbar {
-    padding-left: 130px;
-    padding-top: 24px;
+  #X {
+    display: none;
   }
 
   .main {
@@ -775,12 +883,21 @@ textarea {
     position: relative;
     top: 40px;
     left: 36.46px;
+    margin-left: 0;
+  }
+
+  .frameworks-bullet {
+    position: relative;
+    top: 40px;
+    left: 36.46px;
+    margin-left: 0;
   }
 
   .skills-bullet {
     position: relative;
     top: 40px;
     left: 36.46px;
+    margin-left: 0;
   }
 
   .contact-me {
