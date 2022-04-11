@@ -13,43 +13,6 @@ body {
   color: #fff;
 }
 
-/*.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 2.25rem;
-}
-
-.navbar ul {
-  list-style-type: none;
-}
-
-.nodisplay-mobile {
-  display: none ;
-}
-
-.menu-icon {
-  width: 16px;
-  top: 2px;
-  left: 4px;
-  align-items: center;
-  margin-right: 30px;
-  margin-bottom: 5px;
-}
-
-.container {
-  margin: 0 24px;
-  overflow: hidden;
-}
-
-.header {
-  background-color: #3e3c3c;
-  height: 4.5rem;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}*/
-
 header {
   background-color: #3c3a39;
   color: white;
@@ -65,7 +28,7 @@ header {
 
 nav {
   margin: 0 1.5rem;
-  padding: 1.0rem 0;
+  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
