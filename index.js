@@ -1,4 +1,4 @@
-const mobileMenu = document.querySelector('#menu');
+
 const listItem = document.querySelectorAll('.hidden-items');
 const nav = document.querySelector('nav');
 const navName = document.querySelector('#name');
