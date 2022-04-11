@@ -40,7 +40,7 @@ nav {
   padding: 1.5rem 0.8rem;
   display: flex;
   align-items: flex-start;
-  background: #3C3A39;
+  background: #3c3a39;
 }
 
 .ul-list {
@@ -53,17 +53,6 @@ nav {
 
 li {
   list-style: none;
-}
-
-.ul-list li:nth-child(3),
-.ul-list li:nth-child(4),
-.ul-list li:nth-child(5) {
-  border-bottom: thin solid gainsboro;
-  padding: 0 0 0.5rem 1rem;
-  margin-bottom: 0.8rem;
-  color: #fff5e1;
-  font-size: 2.5rem;
-  font-weight: 700;
 }
 
 nav > span {
@@ -259,6 +248,17 @@ a {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
+}
+
+.ul-list li:nth-child(3),
+.ul-list li:nth-child(4),
+.ul-list li:nth-child(5) {
+  border-bottom: thin solid gainsboro;
+  padding: 0 0 0.5rem 1rem;
+  margin-bottom: 0.8rem;
+  color: #fff5e1;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .grid-container a button {
@@ -608,7 +608,7 @@ textarea {
     visibility: hidden;
   }
 
-  /*#menu {
+  /* #menu {
     display: none;
   }
 
