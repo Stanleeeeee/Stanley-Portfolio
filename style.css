@@ -664,7 +664,6 @@ textarea {
     padding-top: 24px;
   } */
 
-
   header {
     height: 4.5rem;
   }
@@ -684,7 +683,7 @@ textarea {
 
   nav > ul > li {
     font-size: 1rem;
-    font-weight: 600; 
+    font-weight: 600;
   }
 
   .socials li {
@@ -700,6 +699,7 @@ textarea {
   }
 
   nav ul a:hover {
+    background-color: rgb(38, 219, 14);
     color: #ff6800;
     margin-right: 20px;
     width: 20px;
@@ -716,7 +716,6 @@ textarea {
   #X {
     display: none;
   }
-
 
   .main {
     padding-top: 336px;
