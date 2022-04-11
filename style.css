@@ -627,7 +627,21 @@ textarea {
     height: 4.5rem;
   }
 
+  #menu {
+    display: none;
+  }
 
+  nav {
+    margin: 0 10rem;
+  }
+
+  nav > ul {
+    display: flex;
+    gap: 4.5rem;
+  }
+
+  nav > ul > li {
+    font-size: 1rem;
     font-weight: 600;
   }
 
@@ -866,6 +880,13 @@ textarea {
   }
 
   .language-bullet {
+    position: relative;
+    top: 40px;
+    left: 36.46px;
+    margin-left: 0;
+  }
+
+  .frameworks-bullet {
     position: relative;
     top: 40px;
     left: 36.46px;
