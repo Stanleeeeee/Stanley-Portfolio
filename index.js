@@ -185,7 +185,7 @@ function createProjectsContainer() {
     grid.appendChild(projectContainer);
   }
 }
-createProjectsContainer();
+
 
 const workSectionDiv = document.querySelectorAll('.mini-projects');
 
