@@ -186,7 +186,7 @@ function createProjectsContainer() {
   }
 }
 
-
+createProjectsContainer();
 const workSectionDiv = document.querySelectorAll('.mini-projects');
 
 let counter = 0;
