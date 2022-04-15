@@ -8,7 +8,7 @@ const envelope = document.querySelector('#envelope');
 const projectsSection = document.querySelector('#projects');
 const blurProjects = document.querySelectorAll('#projects > div');
 
-/* Menu */
+/* Menu Section */
 
 function resetMobileMenu() {
   listItem.forEach((item) => item.classList.remove('show'));
@@ -42,7 +42,7 @@ function resizeWindow() {
 
 window.addEventListener('resize', resizeWindow);
 
-/* Project section */
+/* Project Section */
 
 const projects = [
   {
@@ -233,7 +233,6 @@ for (let i = 0; i < buttons.length; i += 1) {
   });
 }
 
-/* Form validation */
 /* Form validation */
 
 const form = document.getElementById('contact-register');
