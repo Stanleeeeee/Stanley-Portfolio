@@ -149,7 +149,7 @@ function createDiv(buttonId) {
   projectExitBtn.classList.add('popup-exit');
   div.classList.toggle('popup');
 
-  if (window.innerWidth < 900) {
+  if (window.innerWidth < 600) {
     div.classList.toggle('mobile-width');
     projectsTitle.classList.toggle('mobile-title');
     projectsLanguages.classList.toggle('mobile-languages');
