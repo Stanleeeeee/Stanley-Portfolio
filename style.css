@@ -519,7 +519,7 @@ a {
   margin: 0 24px;
 }
 
-.name {
+#name {
   width: 295px;
   margin-bottom: 54px;
 }
@@ -537,7 +537,7 @@ textarea {
   line-height: 24px;
 }
 
-.textarea {
+#textarea {
   margin-bottom: 36px;
   width: 327px;
   background-color: #fbf8f7;
@@ -1349,7 +1349,7 @@ button#resume {
     width: 100%;
   }
 
-  .textarea {
+  #textarea {
     width: 684px;
     height: 114px;
   }
