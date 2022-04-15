@@ -234,7 +234,6 @@ for (let i = 0; i < buttons.length; i += 1) {
 }
 
 /* Form validation */
-/* Form validation */
 
 const form = document.getElementById('contact-register');
 const email = document.getElementsById('email');
@@ -247,4 +246,25 @@ form.addEventListener('submit', (e) => {
     errorMessage.classList.remove('hidden');
   }
 });
+
+/* Local storage */
+
+const myStorage = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+form.addEventListener('change', () => {
+  myStorage.name = document.getElementById('name').value;
+  myStorage.email = document.getElementById('email').value;
+  myStorage.message = document.getElementById('textarea').value;
+  localStorage.setItem('storageInfo', JSON.stringify(myStorage));
+});
+
+const storageObject = JSON.parse(localStorage.getItem('storageInfo'));
+
+document.getElementById('name').value = storageObject.name;
+document.getElementById('email').value = storageObject.email;
+document.getElementById('textarea').value = storageObject.message;
 
