@@ -8,7 +8,7 @@ const envelope = document.querySelector('#envelope');
 const projectsSection = document.querySelector('#projects');
 const blurProjects = document.querySelectorAll('#projects > div');
 
-/* Menu Section */
+/* Menu */
 
 function resetMobileMenu() {
   listItem.forEach((item) => item.classList.remove('show'));
@@ -42,7 +42,7 @@ function resizeWindow() {
 
 window.addEventListener('resize', resizeWindow);
 
-/* Project Section */
+/* Project section */
 
 const projects = [
   {
@@ -108,7 +108,7 @@ const projects = [
   {
     id: 'mini-project-btn6',
     title: 'Website Portfolio',
-    image: 'images/ImgPlaceholder3.png',
+    image: 'images/Snapshoot-Portfolio.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
     technologies: ['html', 'bootstrap', 'Ruby'],
@@ -149,7 +149,7 @@ function createDiv(buttonId) {
   projectExitBtn.classList.add('popup-exit');
   div.classList.toggle('popup');
 
-  if (window.innerWidth < 900) {
+  if (window.innerWidth < 600) {
     div.classList.toggle('mobile-width');
     projectsTitle.classList.toggle('mobile-title');
     projectsLanguages.classList.toggle('mobile-languages');
@@ -231,9 +231,10 @@ for (let i = 0; i < buttons.length; i += 1) {
     document.body.classList.toggle('no-scroll');
     blurProjects.forEach((project) => project.classList.toggle('blur'));
   });
-}
 
-/* Form validation */
+
+
+/* Form validation 
 const form = document.getElementById('contact-form');
 const email = document.getElementById('email');
 const lowerCaseRegex = /^[a-z][a-z0-9\-_.]+@[a-z]{2,}\.[a-z0-9]{2,}$/;
