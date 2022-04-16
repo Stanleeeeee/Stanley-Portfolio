@@ -10,7 +10,7 @@ const blurProjects = document.querySelectorAll('#projects > div');
 
 /* Menu */
 
-function resetMobileMenu() {
+
   listItem.forEach((item) => item.classList.remove('show'));
   nav.classList.remove('expand');
   navName.classList.remove('hidden');
@@ -137,7 +137,7 @@ function createDiv(buttonId) {
   paragraph.innerText = `${projects[buttonId].description}`;
   paragraph.classList.toggle('popup-paragraph');
 
-  liveSiteBtn.textContent = 'See Live';
+  liveSiteBtn = 'See Live';
   liveSiteBtn.href = `${projects[buttonId].live_link}`;
   sourceBtn.textContent = 'See Source';
   sourceBtn.href = `${projects[buttonId].source_link}`;
