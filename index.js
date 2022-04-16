@@ -1,7 +1,3 @@
-const mobileMenu = document.querySelector('#menu');
-const listItem = document.querySelectorAll('.hidden-items');
-const nav = document.querySelector('nav');
-const navName = document.querySelector('#name');
 const menuList = document.querySelector('nav ul');
 const exitIcon = document.querySelector('.exit');
 const envelope = document.querySelector('#envelope');
@@ -149,7 +145,7 @@ function createDiv(buttonId) {
   projectExitBtn.classList.add('popup-exit');
   div.classList.toggle('popup');
 
-  if (window.innerWidth < 600) {
+  if (window.innerWidth < 900) {
     div.classList.toggle('mobile-width');
     projectsTitle.classList.toggle('mobile-title');
     projectsLanguages.classList.toggle('mobile-languages');
@@ -231,18 +227,34 @@ for (let i = 0; i < buttons.length; i += 1) {
     document.body.classList.toggle('no-scroll');
     blurProjects.forEach((project) => project.classList.toggle('blur'));
   });
+}
 
+/* Form Validation */
 
-
-/* Form validation 
-const form = document.getElementById('contact-form');
+const form = document.querySelector('[contact-register]');
 const email = document.getElementById('email');
-const lowerCaseRegex = /^[a-z][a-z0-9\-_.]+@[a-z]{2,}\.[a-z0-9]{2,}$/;
 
-form.addEventListener('submit', (e) => {
-  if (lowerCaseRegex.test(email.value.trim())) {
-    e.preventDefault();
-    const errorMessage = document.querySelector('small');
-    errorMessage.classList.remove('hidden');
+function validate(e) {
+  if (!e) {
+    document.querySelector('small').style = 'display: flex';
+    document.querySelector('form-error').innerHTML = 'Resubmit your email address in lowercase.';
+    document.querySelector('email').style = 'background-color: #fdd;';
   }
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (email.value !== email.value.toLowerCase()) {
+    validate(false);
+    return;
+  }
+  form.submit();
+  form.reset();
+  validate(true);
 });
+
+const app = () => {
+  navSlide();
+};
+
+app();
