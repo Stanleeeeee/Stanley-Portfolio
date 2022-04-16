@@ -903,6 +903,14 @@ textarea {
   border-radius: 10px;
 }
 
+.small.hidden {
+  display: none;
+}
+
+.small.show {
+  color: red;
+}
+
 @media (min-width: 768px) {
   body {
     width: 100%;

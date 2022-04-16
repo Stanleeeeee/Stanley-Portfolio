@@ -234,10 +234,9 @@ for (let i = 0; i < buttons.length; i += 1) {
 }
 
 /* Form validation */
-
-const form = document.getElementById('contact-register');
-const email = document.getElementsById('email');
-const lowerCaseRegex = /[A-Z]/;
+const form = document.getElementById('contact-form');
+const email = document.getElementById('email');
+const lowerCaseRegex = /^[a-z][a-z0-9\-_.]+@[a-z]{2,}\.[a-z0-9]{2,}$/;
 
 form.addEventListener('submit', (e) => {
   if (lowerCaseRegex.test(email.value.trim())) {
@@ -246,4 +245,3 @@ form.addEventListener('submit', (e) => {
     errorMessage.classList.remove('hidden');
   }
 });
-
