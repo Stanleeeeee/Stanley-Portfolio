@@ -23,6 +23,14 @@ https://stanleeeeee.github.io/Stanley-Portfolio/
 - Twitter: [@Stanmega89](https://twitter.com/Stanmega89)
 
 
+## Contributors
+**Olivier Gasominali**
+- - GitHub: [@Goliviernation](https://github.com/Goliviernation)
+
+**Odette Felix**
+- - GitHub: [@felixodette](https://github.com/felixodette)
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
