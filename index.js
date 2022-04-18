@@ -232,3 +232,42 @@ for (let i = 0; i < buttons.length; i += 1) {
     blurProjects.forEach((project) => project.classList.toggle('blur'));
   });
 }
+
+/* Form Validation */
+const form = document.getElementById('contact-register');
+const email = document.getElementById('email');
+const errorElement = document.getElementById('error');
+
+function valid(input) {
+  if (input === input.toLowerCase()) {
+    return true;
+  }
+  return false;
+}
+
+form.addEventListener('submit', (event) => {
+  if (!valid(email.value)) {
+    event.preventDefault();
+    errorElement.innerText = 'Please enter your email address in lower case';
+  }
+});
+
+/* Local storage */
+const myStorage = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+form.addEventListener('change', () => {
+  myStorage.name = document.getElementById('name').value;
+  myStorage.email = document.getElementById('email').value;
+  myStorage.message = document.getElementById('textarea').value;
+  localStorage.setItem('storageInfo', JSON.stringify(myStorage));
+});
+
+const storageObject = JSON.parse(localStorage.getItem('storageInfo'));
+
+document.getElementById('name').value = storageObject.name;
+document.getElementById('email').value = storageObject.email;
+document.getElementById('textarea').value = storageObject.message;
