@@ -10,7 +10,7 @@ const blurProjects = document.querySelectorAll('#projects > div');
 
 /* Menu */
 
-function resetMobileMenu() {
+
   listItem.forEach((item) => item.classList.remove('show'));
   nav.classList.remove('expand');
   navName.classList.remove('hidden');
@@ -136,7 +136,7 @@ function createDiv(buttonId) {
   paragraph.innerText = `${projects[buttonId].description}`;
   paragraph.classList.toggle('popup-paragraph');
 
-  liveSiteBtn.textContent = 'See Live';
+  liveSiteBtn = 'See Live';
   liveSiteBtn.href = `${projects[buttonId].live_link}`;
   sourceBtn.textContent = 'See Source';
   sourceBtn.href = `${projects[buttonId].source_link}`;
@@ -176,11 +176,19 @@ function createDiv(buttonId) {
 }
 
 
-
 /* Form Validation */
 const form = document.getElementById('contact-register');
 const email = document.getElementById('email');
 const errorElement = document.getElementById('error');
+
+for (let i = 0; i < buttons.length; i += 1) {
+  buttons[i].addEventListener('click', () => {
+    createDiv(i);
+    document.body.style.background = 'black';
+    document.body.classList.toggle('no-scroll');
+    blurProjects.forEach((project) => project.classList.toggle('blur'));
+  });
+}
 
 function valid(input) {
   if (input === input.toLowerCase()) {
@@ -195,3 +203,24 @@ form.addEventListener('submit', (event) => {
     errorElement.innerText = 'Please enter your email address in lower case';
   }
 });
+
+
+/* Local storage */
+const myStorage = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+form.addEventListener('change', () => {
+  myStorage.name = document.getElementById('name').value;
+  myStorage.email = document.getElementById('email').value;
+  myStorage.message = document.getElementById('textarea').value;
+  localStorage.setItem('storageInfo', JSON.stringify(myStorage));
+});
+
+const storageObject = JSON.parse(localStorage.getItem('storageInfo'));
+
+document.getElementById('name').value = storageObject.name;
+document.getElementById('email').value = storageObject.email;
+document.getElementById('textarea').value = storageObject.message;

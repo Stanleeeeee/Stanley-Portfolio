@@ -905,7 +905,6 @@ textarea {
   margin-right: auto;
   border-radius: 10px;
 }
-
 /* Desktop Version */
 @media (min-width: 768px) {
   body {
