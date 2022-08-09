@@ -43,7 +43,6 @@ function resizeWindow() {
 window.addEventListener('resize', resizeWindow);
 
 /* Project section */
-
 const projects = [
   {
     id: 'main-project-button',
@@ -176,53 +175,11 @@ function createDiv(buttonId) {
   });
 }
 
-const grid = document.getElementById('projects-grid');
-function createProjectsContainer() {
-  for (let i = 1; i < projects.length; i += 1) {
-    const projectContainer = document.createElement('div');
-    projectContainer.setAttribute('class', 'mini-projects');
-    projectContainer.setAttribute('id', `mini-project${i}`);
-    grid.appendChild(projectContainer);
-  }
-}
-createProjectsContainer();
 
-const workSectionDiv = document.querySelectorAll('.mini-projects');
-
-let counter = 0;
-function createElements(project) {
-  project.innerHTML = `
-          <img
-            src=${projects[counter].image}
-            alt="project"
-            class="hidden"
-            data-img="image"
-          />
-          <h3 class="mini-h3" data-title="title">
-          ${projects[counter].title}
-          </h3>
-          <p class="mini-p" data-p="paragraph">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard
-          </p>
-          <div class="mini-languages-container" data-language="language-list">
-            <div class="mini-box"><span>html</span></div>
-            <div class="mini-box"><span>bootstrap</span></div>
-            <div class="mini-box"><span>Ruby</span></div>
-          </div>
-          <button
-            type="button"
-            class="btn project-btn"
-            id="mini-project-btn${counter + 1}"
-          >
-            See Project
-          </button>`;
-  counter += 1;
-}
-
-workSectionDiv.forEach(createElements);
-
-const buttons = [...document.querySelectorAll('.project-btn')];
+/* Form Validation */
+const form = document.getElementById('contact-register');
+const email = document.getElementById('email');
+const errorElement = document.getElementById('error');
 
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
@@ -232,11 +189,6 @@ for (let i = 0; i < buttons.length; i += 1) {
     blurProjects.forEach((project) => project.classList.toggle('blur'));
   });
 }
-
-/* Form Validation */
-const form = document.getElementById('contact-register');
-const email = document.getElementById('email');
-const errorElement = document.getElementById('error');
 
 function valid(input) {
   if (input === input.toLowerCase()) {
@@ -251,6 +203,7 @@ form.addEventListener('submit', (event) => {
     errorElement.innerText = 'Please enter your email address in lower case';
   }
 });
+
 
 /* Local storage */
 const myStorage = {

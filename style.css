@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -884,10 +885,6 @@ textarea {
   color: #3c3a39;
 }
 
-#error {
-  color: #ff1919fd;
-}
-
 .footer-line {
   margin-bottom: 26px;
   border-bottom: 1px solid #dfe1e6;
@@ -908,7 +905,6 @@ textarea {
   margin-right: auto;
   border-radius: 10px;
 }
-
 /* Desktop Version */
 @media (min-width: 768px) {
   body {
